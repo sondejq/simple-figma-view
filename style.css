@@ -1,0 +1,115 @@
+body {
+    background-color: #2a2c43;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-row-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+.tabs {
+    width: 210px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.tabs button {
+    background-color: #2a2c43;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left !important;
+    padding: 20px;
+    width: 200px;
+}
+.tabs button:focus {
+    background-color: #353854;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border-left: 2px solid #f8bd66;
+}
+.tabs a {
+    color: #3d67d4;
+    padding: 20px;
+}
+.services {
+    background-color: #353854;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    width: 210px;
+    padding: 20px;
+    margin-left: 200px;
+    margin-top: 150px;
+}
+.services h4 {
+    padding: 10px;
+    font-size: 19px;
+}
+.services button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #f8bd66;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.services button:hover {
+    background-color: black;
+    color: #f8bd66;
+    transition-duration: 0.5s;
+}
+.flex {
+    display: flex;
+}
+.third-section {
+    color: white;
+}
+.third-section button {
+    color: white;
+    background-color: #2a2c43;
+    padding: 20px;
+    text-align: left !important;
+    width: 300px;
+    cursor: pointer;
+    border: none;
+}
+.third-section button:focus {
+    background-color: #353854;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .flex-row-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .services {
+        margin: 0;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .third-section {
+        margin-top: 100px;
+    }
+}
